@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinanceApp.Resources;
+namespace FinanceApp.Pages;
 
-public partial class Credits : ContentPage
+public partial class Balance : ContentPage
 {
-    public Credits()
+    public Balance()
     {
         InitializeComponent();
     }

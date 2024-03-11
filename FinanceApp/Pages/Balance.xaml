@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceApp.Pages.Balance"
+             Style="{StaticResource DarkPage}">
+    <ContentPage.Content>
+      <ScrollView>
+          <VerticalStackLayout>
+              
+              <Border Grid.Row="1" BackgroundColor="{StaticResource White}"
+                      Padding="8"
+                      HorizontalOptions="Fill"
+                      VerticalOptions="Fill">
+                  <Border.StrokeShape>
+                      <RoundRectangle CornerRadius="0,0,25,25" />
+                  </Border.StrokeShape>
+
+                  <Grid VerticalOptions="Fill">
+                      <Grid.RowDefinitions>
+                          <RowDefinition Height="3*" />
+                          <RowDefinition Height="*" />
+                      </Grid.RowDefinitions>
+                      <VerticalStackLayout Grid.Row="0" VerticalOptions="Center">
+                          <Label Style="{StaticResource TitleText}"
+                                 Text="SaveSmart"
+                                 SemanticProperties.HeadingLevel="Level1" />
+                          <Label
+                              Text="Empowering You with Smart Saving Strategies, Budgeting Insights"
+                              HorizontalTextAlignment="Start"
+                              Style="{StaticResource SubtitleText}"
+                              SemanticProperties.HeadingLevel="Level2"
+                              SemanticProperties.Description="Empowering You with Smart Saving Strategies, Budgeting Insights" />
+
+                      </VerticalStackLayout>
+
+                      <Button Grid.Row="1"
+                              x:Name="CounterBtn"
+                              Text="Get Start"
+                              SemanticProperties.Hint="Get Start"
+                              Command="{Binding NextPageCommand}"
+                              HorizontalOptions="Fill"
+                              VerticalOptions="Center" />
+                  </Grid>
+              </Border>
+              
+          </VerticalStackLayout>
+      </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
