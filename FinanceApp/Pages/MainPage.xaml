@@ -5,7 +5,7 @@
              xmlns:viewModels="clr-namespace:FinanceApp.ViewModels"
              x:Class="FinanceApp.MainPage">
     <ContentPage.BindingContext>
-        <viewModels:MainViewModel/>
+        <viewModels:MainViewModel />
     </ContentPage.BindingContext>
     <ScrollView Padding="0" Margin="0">
         <Grid
@@ -13,7 +13,7 @@
             Margin="0"
             VerticalOptions="Fill">
             <Grid.RowDefinitions>
-                <RowDefinition Height="210" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
@@ -54,9 +54,10 @@
             </Border>
             <Image Grid.Row="0"
                    Source="piggy_bank.png"
-                   HeightRequest="250"
+                   HeightRequest="300"
                    Aspect="AspectFit"
-                   VerticalOptions="Start"
+                   VerticalOptions="End"
+                   Margin="0, 0, 0, -40"
                    SemanticProperties.Description="dot net bot in a race car number eight" />
         </Grid>
     </ScrollView>

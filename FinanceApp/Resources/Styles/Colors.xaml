@@ -5,7 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     
     <Color x:Key="Primary">#FFCB15</Color>
-    <Color x:Key="DarkBackground">#1C2632</Color>
+    <Color x:Key="DarkBackground900">#1C2632</Color>
+    <Color x:Key="DarkBackground800">#273343</Color>
+    <Color x:Key="Purple900">#6a3beb</Color>
+    <Color x:Key="Purple800">#7b4fe9</Color>
     <Color x:Key="Black">#000000</Color>
     <Color x:Key="Gray">#D1D3DC</Color>
     <Color x:Key="White">#FFFFFF</Color>
